@@ -69,7 +69,7 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::on_actionFind_triggered()
 {
-    SearchDialog dlg;
+    SearchDialog dlg(this,ui->textEdit);
     dlg.exec();
 }
 
@@ -350,6 +350,13 @@ void MainWindow::on_actionShowStatusBar_triggered()
 
 void MainWindow::on_actionSelectAll_triggered()
 {
+    ui->textEdit->selectAll();
+}
 
+
+void MainWindow::on_actionExit_triggered()
+{
+    if(userEditConfirmed())
+        exit(0);
 }
 

@@ -67,6 +67,10 @@ private slots:
 
     void on_actionShowStatusBar_triggered();
 
+    void on_actionSelectAll_triggered();
+
+    void on_actionExit_triggered();
+
 private:
     Ui::MainWindow *ui;
 
