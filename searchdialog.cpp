@@ -12,3 +12,9 @@ SearchDialog::~SearchDialog()
 {
     delete ui;
 }
+
+void SearchDialog::on_btFindNext_clicked()
+{
+
+}
+
